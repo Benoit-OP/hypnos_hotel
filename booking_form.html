@@ -122,29 +122,42 @@
             </div>
             <!-- Page Header End -->
 
-            <form class="mx-5">
+            <form action="" method="post" class="mx-5">
+                <h4>Coordonnées</h4>
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
                   <div class="col">
                     <div class="form-outline">
                         <label class="form-label" for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom" class="form-control" required/>
+                        <input type="text" id="nom" name="nom" class="form-control" placeholder="André" value="" required/>
                     </div>
                   </div>
                   <div class="col">
                     <div class="form-outline">
                         <label class="form-label" for="prenom">Prénom</label>
-                        <input type="text" id="prenom" name="prenom" class="form-control" required />                    
+                        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Malraux" value="" required />                    
                     </div>
                   </div>
                 </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="email">E-mail</label>
-                    <input type="email" id="email" name="email" class="form-control" required/>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="email">E-mail</label>
+                            <input type="email" id="email" name="email" value="" placeholder="exemple@mail.com" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="prenom">Téléphone</label>
+                            <input type="number" id="phone" name="phone" placeholder="0695560288" value="" class="form-control" required />                    
+                        </div>
+                    </div>
                 </div>
+                
+                <h4>Information réservation</h4>
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example4">Quel Hôtel?</label>
-                    <select class="px-2" name="hotels" id="hotels">
+                    <label class="form-label" for="hotels">Quel Hôtel?</label>
+                    <select class="form-select" name="hotels" id="hotels" required>
                         <option  selected disabled>Choississez un hôtel</option>
                         <option value="Bordeaux">Bordeaux</option>
                         <option value="Sable d'Olonne">Sable d'Olonne</option>
@@ -155,6 +168,35 @@
                         <option value="Fontainebleau">Fontainebleau</option>
                     </select>
                 </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="hotels">Quelle chambre?</label>
+                    <select class="form-select" name="hotels" id="hotels">
+                        <option  selected disabled>Choississez une chambre</option>
+                        <option value="Bordeaux">Bordeaux</option>
+                        <option value="Sable d'Olonne">Sable d'Olonne</option>
+                        <option value="Chamonix-Mont-Blanc">Chamonix-Mont-Blanc</option>
+                        <option value="Les Deux Alpes">Les Deux Alpes</option>
+                        <option value="Nice">Nice</option>
+                        <option value="Châtel-Guyon">Châtel-Guyon</option>
+                        <option value="Fontainebleau">Fontainebleau</option>
+                    </select>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="date_start">Date de début</label>
+                          <input type="date" id="date_start" name="date_start" value="" class="form-control" required/>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                          <label class="form-label" for="date_end">Date de fin</label>
+                          <input type="date" id="date_end" name="date_end" value="" class="form-control" required />                    
+                      </div>
+                    </div>
+                </div>
+                  
+                
               
                 <button type="submit" class="btn btn-primary btn-block mb-4 ">Réserver</button>
               </form>
