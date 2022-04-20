@@ -2,6 +2,41 @@
     require "header.html";
 ?>
 
+<?php require 'php/functions.php'; ?>
+
+<?php
+    if(!empty($_POST)){
+
+        $errors = array();
+
+        if(empty($_POST['nom'])){
+            $errors['username'] = "Vous n'avez pas entré de Nom";
+        }
+
+        if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+            $errors['email'] = "Votre email n'est pas valide";
+        }
+
+        if(empty($_POST['password'])){
+            $errors['password'] = "Votre email n'est pas valide";
+        }
+
+        if(empty($errors)) {
+
+            require_once "php/db.php";
+
+            $req = $pdo->prepare("INSERT INTO users SET firstname = ?, name = ?, email = ?, password = ?");
+            $req->execute([$_POST['firstname'], $_POST['name'], $_POST['email'], $_POST['password']]);
+        }
+
+
+        debug($errors);
+
+
+    }
+
+?>
+
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
@@ -39,7 +74,7 @@
                         <div class="col">
                             <div class="form-outline">
                                 <label class="form-label" for="prenom">Prénom</label>
-                                <input type="text" id="prenom" name="prenom" class="form-control" placeholder="David" value="" required />                    
+                                <input type="text" id="prenom" name="prenom" class="form-control" placeholder="David" value=""  required/>                    
                             </div>
                         </div>
                         </div>
@@ -53,7 +88,7 @@
                             <div class="col">
                                 <div class="form-outline">
                                     <label class="form-label" for="prenom">Mot de passe</label>
-                                    <input type="password" id="password" name="password" placeholder="*****" value="" class="form-control" required />                    
+                                    <input type="password" id="password" name="password" placeholder="*****" value="" class="form-control" required/>                    
                                 </div>
                             </div>
                         </div>
