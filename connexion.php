@@ -1,6 +1,6 @@
 <?php
 
-require "header.html";
+require "header.php";
 ?>
 
 <body>
@@ -52,8 +52,11 @@ require "header.html";
                     </div>
                 </div>
             </div>
-        </div>
             
+        </div>
+        <div style="margin-left: 40%;">
+            <b>Pas pas encore client? <a href="inscription.php">Inscrivez-vous</a>!</b>
+        </div>    
 
         
 

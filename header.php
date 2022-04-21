@@ -1,3 +1,11 @@
+<?php 
+if(session_status() == PHP_SESSION_NONE){
+
+    session_start();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -89,7 +97,18 @@
                                     </div>
                                     <a href="contact.php" class="nav-item nav-link">Contact</a>
                                 </div>
-                                <a href="connexion.php" class="btn btn-primary rounded-0 py-4 px-md-5  d-lg-block">Connexion<i class="fa fa-arrow-right ms-3"></i></a>
+                                <?php
+                                    if(isset($_SESSION['email'])){
+                                ?>
+                                    <a href="dashboard.php" class="btn btn-primary rounded-0 py-4 px-md-5  d-lg-block">Mon Compte</a>
+                                <?php
+                                    }else{
+                                ?>
+                                    <a href="connexion.php" class="btn btn-primary rounded-0 py-4 px-md-5  d-lg-block">Connexion<i class="fa fa-arrow-right ms-3"></i></a>
+                                <?php
+                                }                                
+                                ?>
+                               
                             </div>
                         </nav>
                     </div>
