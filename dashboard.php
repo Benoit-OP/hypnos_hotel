@@ -1,10 +1,4 @@
 <?php require_once 'header.php'; ?>
-<?php 
-
-$_SESSION['email'] = "zdad@mail.com";
-$_SESSION['name'] = "Jean Dubois";
-
-?>
 
         <!-- Page Header Start -->
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-2.jpg);">

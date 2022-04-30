@@ -1,10 +1,10 @@
 <?php
-
+/*
 define('HOST', 'localhost');
 define('DB_NAME', 'Hypnos');
 define('USER', 'root');
 define('PASSWORD', '');
-
+*/
 
 try{
     $pdo = new PDO('mysql:host=localhost;dbname=Hypnos', 'root', '');

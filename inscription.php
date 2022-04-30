@@ -1,9 +1,8 @@
-
 <?php
     require_once "php/functions.php";
-    session_start();
+    
 ?>
-
+<?php require_once "header.php"; ?>
 <?php
 /*require_once "php/functions.php";*/
 
@@ -27,9 +26,9 @@
             $req = $pdo->prepare('SELECT id FROM users WHERE email = ?');
             $req->execute([$_POST['email']]);
             $user = $req->fetch();
-           if($user){
+            if($user){
                $errors['email'] = 'Cet email est déjà enregistré!';
-           }
+            }
 
         }
 
@@ -39,20 +38,23 @@
 
         if(empty($errors)){
 
-            $req = $pdo->prepare("INSERT INTO users(name, firstname, email, password) VALUES (?, ?, ?, ?)");
+            $req = $pdo->prepare("INSERT INTO users(name, firstname, email, password, confirmation_token, ) VALUES (?, ?, ?, ?, ?)");
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-            $req->execute([$_POST['name'], $_POST['firstname'], $_POST['email'], $password]);
-
-            header('Location: dashboard.php');
-            /*die('votre compte a été crée');*/
+            $token = str_random(60);
+            $req->execute([$_POST['name'], $_POST['firstname'], $_POST['email'], $password, $token]);
+            $user_id = $pdo->lastInsertId();
+            mail($_POST['email'], "Confirmation de la création de votre compte", "Afin de le valider, merci de cliquer sur ce lien\n\n localhost/projets/hypnos_hotel/confirm.php?id=$user_id&token=$token");
+            header('Location: connexion.php');
+            exit();
+           /* die('votre compte a été crée');*/
         }
 
-        /*debug($errors);*/
+        debug($errors);
 
     }
 
 ?>
-<?php require "header.php"; ?>
+
 
 
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
