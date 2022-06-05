@@ -79,7 +79,7 @@
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="booking.php" class="dropdown-item">Réservation</a>
+                                            <a href="booking_form.php" class="dropdown-item">Réservation</a>
                                             <a href="#team" class="dropdown-item">Nos equipes</a>
                                             <a href="inscription.php" class="dropdown-item">Inscription</a>
                                         </div>

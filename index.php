@@ -134,7 +134,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>60 </small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="bordeaux.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="bordeaux.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>82</small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="sables_dolonne.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="sables_dolonne.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>90 </small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="chamonix.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="chamonix.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> infos</a>
                                 </div>
                             </div>
@@ -218,7 +218,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>105 </small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="deux_alpes.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="deux_alpes.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>120 </small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="nice.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="nice.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>130 </small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="chatel_guyon.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="chatel_guyon.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
@@ -302,7 +302,7 @@
                                     <small><i class="fa fa-parking text-primary me-2"></i>150</small>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="fontainebleau.html">Voir chambres</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="fontainebleau.php">Voir chambres</a>
                                     <a class="btn btn-sm btn-dark rounded py-2 px-4" href=""><i class="fa fa-plus-circle "></i> Infos</a>
                                 </div>
                             </div>
